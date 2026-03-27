@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import { Code, LayoutTemplate, HeartHandshake, Layers } from "lucide-react";
 import Image from "next/image";
-import profilePic from "../../assets/cartoon_profile.png";
+import profilePic from "../../assets/myImg1.png";
 
 const valueCards = [
   {
