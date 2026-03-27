@@ -1,0 +1,104 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #F4F1EC;
+  /* Warm beige */
+  --color-primary-foreground: #1A1A1A;
+  /* Soft black */
+  --color-secondary: #7C9A92;
+  /* Muted sage green */
+  --color-secondary-foreground: #ffffff;
+  --color-accent: #D97A6F;
+  /* Warm coral */
+  --color-accent-foreground: #ffffff;
+  --color-muted: #EAE6DF;
+  /* Muted light grey-beige */
+  --color-muted-foreground: #5A5A5A;
+  /* Muted grey */
+
+  --font-sans: var(--font-open-sans), ui-sans-serif, system-ui, sans-serif;
+  --font-heading: var(--font-playfair), ui-serif, Georgia, serif;
+}
+
+@layer base {
+  :root {
+    --background: var(--color-primary);
+    --foreground: var(--color-primary-foreground);
+  }
+
+  .dark {
+    --color-primary: #121212;
+    --color-primary-foreground: #EAE6DF;
+    --color-secondary: #4A6B63;
+    --color-secondary-foreground: #ffffff;
+    --color-accent: #B05C53;
+    --color-accent-foreground: #ffffff;
+    --color-muted: #2A2A2A;
+    --color-muted-foreground: #A0A0A0;
+    
+    --background: var(--color-primary);
+    --foreground: var(--color-primary-foreground);
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+  min-height: 100vh;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-heading);
+}
+
+/* Custom Scrollbar for Lenis and Aesthetics */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-primary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-muted-foreground);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-secondary);
+}
+
+/* Utilities */
+.glass {
+  background: rgba(255, 255, 255, 0.45);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.03);
+}
+
+.dark .glass {
+  background: rgba(18, 18, 18, 0.65);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+}
+
+.noise {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  z-index: 9999;
+  opacity: 0.04;
+  background-image: url('data:image/svg+xml;utf8,%3Csvg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg"%3E%3Cfilter id="noiseFilter"%3E%3CfeTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="3" stitchTiles="stitch"/%3E%3C/filter%3E%3Crect width="100%25" height="100%25" filter="url(%23noiseFilter)"/%3E%3C/svg%3E');
+}
