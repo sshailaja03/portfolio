@@ -32,6 +32,7 @@ export default function RootLayout({
     <html
       lang="en"
       className={`${openSans.variable} ${playfair.variable} h-full antialiased`}
+      suppressHydrationWarning
     >
       <body className="min-h-full flex flex-col selection:bg-secondary selection:text-white">
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
