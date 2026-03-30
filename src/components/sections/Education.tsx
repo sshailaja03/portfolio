@@ -20,7 +20,7 @@ export function Education() {
         </motion.div>
 
         <motion.div
-          className="relative max-w-5xl mx-auto md:mx-0"
+          className="relative max-w-5xl mx-auto md:mx-0 space-y-8"
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
@@ -52,6 +52,62 @@ export function Education() {
                  </span>
                  <span className="px-4 py-1.5 rounded-full bg-primary border border-accent/20 text-accent text-sm font-bold shadow-sm">
                    Dean’s List
+                 </span>
+               </div>
+            </div>
+          </div>
+
+          <div className="flex flex-col md:flex-row gap-8 items-start p-10 md:p-14 rounded-[2rem] bg-muted/50 border border-muted-foreground/10 hover:border-secondary/20 transition-colors relative overflow-hidden group shadow-sm">
+            <div className="absolute top-0 right-0 w-64 h-64 bg-secondary/5 rounded-full blur-3xl group-hover:bg-secondary/10 transition-colors pointer-events-none" />
+            
+            <div className="w-16 h-16 rounded-2xl bg-secondary/10 text-secondary flex items-center justify-center shrink-0">
+               <GraduationCap size={32} />
+            </div>
+
+            <div className="flex-1 space-y-4 z-10 w-full">
+               <div className="flex flex-col md:flex-row md:items-end justify-between gap-2">
+                 <div>
+                   <h4 className="text-2xl font-heading font-bold text-foreground">S.S.D Public School</h4>
+                   <p className="text-muted-foreground font-medium uppercase tracking-widest text-xs mt-1">Uttar Pradesh</p>
+                 </div>
+                 <span className="text-accent font-medium text-sm">March 2022</span>
+               </div>
+               
+               <p className="text-muted-foreground leading-relaxed pt-2">
+                 <strong className="text-foreground font-medium">Class XII</strong>
+               </p>
+
+               <div className="flex flex-wrap items-center gap-4 pt-4">
+                 <span className="px-4 py-1.5 rounded-full bg-primary border border-secondary/20 text-secondary text-sm font-bold shadow-sm">
+                   Percentage: 83%
+                 </span>
+               </div>
+            </div>
+          </div>
+
+          <div className="flex flex-col md:flex-row gap-8 items-start p-10 md:p-14 rounded-[2rem] bg-muted/50 border border-muted-foreground/10 hover:border-secondary/20 transition-colors relative overflow-hidden group shadow-sm">
+            <div className="absolute top-0 right-0 w-64 h-64 bg-secondary/5 rounded-full blur-3xl group-hover:bg-secondary/10 transition-colors pointer-events-none" />
+            
+            <div className="w-16 h-16 rounded-2xl bg-secondary/10 text-secondary flex items-center justify-center shrink-0">
+               <GraduationCap size={32} />
+            </div>
+
+            <div className="flex-1 space-y-4 z-10 w-full">
+               <div className="flex flex-col md:flex-row md:items-end justify-between gap-2">
+                 <div>
+                   <h4 className="text-2xl font-heading font-bold text-foreground">S.S.D Public School</h4>
+                   <p className="text-muted-foreground font-medium uppercase tracking-widest text-xs mt-1">New Delhi</p>
+                 </div>
+                 <span className="text-accent font-medium text-sm">March 2020</span>
+               </div>
+               
+               <p className="text-muted-foreground leading-relaxed pt-2">
+                 <strong className="text-foreground font-medium">Class X</strong>
+               </p>
+
+               <div className="flex flex-wrap items-center gap-4 pt-4">
+                 <span className="px-4 py-1.5 rounded-full bg-primary border border-secondary/20 text-secondary text-sm font-bold shadow-sm">
+                   Percentage: 79%
                  </span>
                </div>
             </div>
