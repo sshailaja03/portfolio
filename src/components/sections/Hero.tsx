@@ -62,7 +62,7 @@ export function Hero() {
             transition={{ delay: 0.7, duration: 0.8 }}
           >
             <motion.a 
-              href="/cv/12321463_Shailaja(GENERIC%20SDE).pdf" 
+              href="/cv/12321463_Shailaja(CLASS%20CV).pdf" 
               download="Shailaja_Singh_CV.pdf"
               className="px-8 py-4 bg-transparent border border-muted-foreground/30 text-foreground rounded-full font-medium tracking-wide hover:border-accent hover:text-accent hover:shadow-[0_0_20px_rgba(217,122,111,0.2)] transition-all flex items-center gap-2 group"
               whileHover={{ scale: 1.05 }}
