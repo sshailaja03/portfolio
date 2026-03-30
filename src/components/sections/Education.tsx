@@ -96,7 +96,7 @@ export function Education() {
                <div className="flex flex-col md:flex-row md:items-end justify-between gap-2">
                  <div>
                    <h4 className="text-2xl font-heading font-bold text-foreground">S.S.D Public School</h4>
-                   <p className="text-muted-foreground font-medium uppercase tracking-widest text-xs mt-1">New Delhi</p>
+                   <p className="text-muted-foreground font-medium uppercase tracking-widest text-xs mt-1">Uttar Pradesh</p>
                  </div>
                  <span className="text-accent font-medium text-sm">March 2020</span>
                </div>
