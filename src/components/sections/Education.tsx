@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { GraduationCap } from "lucide-react";
+import { FloatingBubbles } from "@/components/ui/FloatingBubbles";
 
 export function Education() {
   return (
@@ -27,6 +28,7 @@ export function Education() {
           transition={{ duration: 0.6 }}
         >
           <div className="flex flex-col md:flex-row gap-8 items-start p-10 md:p-14 rounded-[2rem] bg-muted/50 border border-muted-foreground/10 hover:border-secondary/20 transition-colors relative overflow-hidden group shadow-sm">
+            <FloatingBubbles />
             <div className="absolute top-0 right-0 w-64 h-64 bg-secondary/5 rounded-full blur-3xl group-hover:bg-secondary/10 transition-colors pointer-events-none" />
             
             <div className="w-16 h-16 rounded-2xl bg-secondary/10 text-secondary flex items-center justify-center shrink-0">
@@ -58,6 +60,7 @@ export function Education() {
           </div>
 
           <div className="flex flex-col md:flex-row gap-8 items-start p-10 md:p-14 rounded-[2rem] bg-muted/50 border border-muted-foreground/10 hover:border-secondary/20 transition-colors relative overflow-hidden group shadow-sm">
+            <FloatingBubbles />
             <div className="absolute top-0 right-0 w-64 h-64 bg-secondary/5 rounded-full blur-3xl group-hover:bg-secondary/10 transition-colors pointer-events-none" />
             
             <div className="w-16 h-16 rounded-2xl bg-secondary/10 text-secondary flex items-center justify-center shrink-0">
@@ -86,6 +89,7 @@ export function Education() {
           </div>
 
           <div className="flex flex-col md:flex-row gap-8 items-start p-10 md:p-14 rounded-[2rem] bg-muted/50 border border-muted-foreground/10 hover:border-secondary/20 transition-colors relative overflow-hidden group shadow-sm">
+            <FloatingBubbles />
             <div className="absolute top-0 right-0 w-64 h-64 bg-secondary/5 rounded-full blur-3xl group-hover:bg-secondary/10 transition-colors pointer-events-none" />
             
             <div className="w-16 h-16 rounded-2xl bg-secondary/10 text-secondary flex items-center justify-center shrink-0">
