@@ -1,47 +1,13 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ArrowUpRight, GitBranch } from "lucide-react";
-import Image from "next/image";
-import sofiaImage from "../../assets/sofia_chess_engine.png";
-import revizoImage from "../../assets/revizo_app.png";
-import encryptorImage from "../../assets/python_encryptor.jpg";
+import { GitBranch } from "lucide-react";
 
 const projects = [
-  {
-    id: "sofia",
-    title: "Sofia Chess Engine",
-    role: "Core Developer",
-    problem: "Building a high-performance chess engine requiring optimized search algorithms and heuristics.",
-    process: "Implemented alpha-beta negamax with iterative deepening, quiescence search, and 5 move-ordering heuristics. Parallelized perft.",
-    outcome: "Achieved depth 6 search in under 1 second on mid-game positions with 85%+ fail-high-first rate. 10x throughput improvement.",
-    tools: ["C++17", "Algorithms", "Concurrency"],
-    github: "https://github.com/sshailaja03/Chess-Engine",
-    image: sofiaImage
-  },
-  {
-    id: "revizo",
-    title: "Revizo – Gamified Learning App",
-    role: "Android Developer & UI/UX",
-    problem: "Students struggle with passive learning and finding engaging ways to retain information.",
-    process: "Designed and built an app integrating SM-2 spaced repetition with a 15s/question real-time battle mode. Focused on engaging UI/UX and analytics tracking.",
-    outcome: "Delivered 40+ flashcards across 5 decks with user XP tracking and response time analytics.",
-    tools: ["Kotlin", "MVVM", "Jetpack", "Room", "Figma"],
-    github: "https://github.com/sshailaja03/Revizo-Learning-App",
-    image: revizoImage
-  },
-  {
-    id: "encryptor",
-    title: "Python File Encryptor",
-    role: "Developer",
-    problem: "Need for a lightweight, secure, and simple CLI tool for file encryption.",
-    process: "Developed a minimal CLI using argparse, integrating AES-128 Fernet encryption for a secure encrypt/decrypt flow.",
-    outcome: "Created a robust, less-than-70 LOC utility that guarantees secure file handling without bloat.",
-    tools: ["Python", "Cryptography", "CLI"],
-    github: "https://github.com/sshailaja03/file-encryptor",
-    image: encryptorImage
-  }
-];
+  { id: "expense-tracker", title: "AI Expense Tracker", role: "Full-Stack Developer", problem: "Managing expenses becomes harder when transaction data is difficult to search, sort, and summarize.", process: "Built a React and Node.js application with MongoDB, algorithmic expense processing, visual analytics, and AI-generated spending insights.", outcome: "Combines practical full-stack development with Merge Sort, Binary Search, HashMap aggregation, and bounded heap-based top-expense analysis.", tools: ["React", "Node.js", "MongoDB", "DSA", "Gemini"], github: "https://github.com/sshailaja03/AI-Expense-Tracker", mark: "AI" },
+  { id: "devlink", title: "DevLink", role: "Full-Stack Developer", problem: "Developers need a simple way to manage projects and present a structured public developer profile.", process: "Built a React and Express platform with JWT authentication, protected project CRUD, public profiles, MongoDB persistence, and reusable API handling.", outcome: "Implemented ownership checks, secure session cookies, centralized API access, and automated backend authorization tests.", tools: ["React", "Node.js", "Express", "MongoDB", "JWT"], github: "https://github.com/sshailaja03/project-showcase", mark: "DL" },
+  { id: "aura-shop", title: "Aura Shop", role: "Frontend Developer", problem: "E-commerce interfaces need fast product discovery, predictable cart behavior, and responsive interactions without unnecessary complexity.", process: "Built a TypeScript React storefront with Zustand state management, validated forms, product discovery, wishlist/cart flows, responsive UI, and motion interactions.", outcome: "Added automated tests for variant-aware cart merging, quantities, totals, and wishlist state.", tools: ["React", "TypeScript", "Zustand", "Vitest", "Tailwind"], github: "https://github.com/sshailaja03/aura-shop", mark: "AS" }
+]
 
 export function Projects() {
   return (
@@ -69,14 +35,8 @@ export function Projects() {
               viewport={{ once: true, margin: "-100px" }}
               transition={{ duration: 0.8 }}
             >
-              <div className="w-full lg:w-1/2 aspect-[4/3] rounded-[2rem] overflow-hidden bg-muted/50 border border-muted-foreground/10 relative group shadow-sm transition-shadow hover:shadow-md">
-                <Image
-                  src={project.image}
-                  alt={`${project.title} Preview`}
-                  fill
-                  className="object-cover group-hover:scale-[1.03] transition-transform duration-700 ease-out"
-                  sizes="(max-width: 1024px) 100vw, 50vw"
-                />
+              <div className="flex aspect-[4/3] w-full items-center justify-center overflow-hidden rounded-[2rem] border border-muted-foreground/10 bg-muted/40 shadow-sm lg:w-1/2">
+                <span className="font-heading text-7xl font-bold tracking-tight text-foreground/15 md:text-9xl">{project.mark}</span>
               </div>
 
               <div className="w-full lg:w-1/2 space-y-8">
