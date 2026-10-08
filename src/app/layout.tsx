@@ -19,8 +19,8 @@ const openSans = Open_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Shailaja Singh | UI/UX Designer & Engineer",
-  description: "Portfolio of Shailaja Singh, a UI/UX designer and problem solver crafting clean, intuitive, visually rich digital experiences.",
+  title: "Shailaja Singh | Software Engineering Portfolio",
+  description: "Software engineering portfolio of Shailaja Singh, featuring full-stack projects, C++, data structures and algorithms, backend development, and interactive frontend engineering.",
 };
 
 export default function RootLayout({
